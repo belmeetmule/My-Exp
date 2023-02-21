@@ -4,5 +4,5 @@ class Category < ApplicationRecord
   has_many :expenses, through: :catagoy_expenses
 
   validates :name, presence: true
-  validates :icon, presence: true, default: "https://coffee.alexflipnote.dev/random"
+  validates :icon, presence: true
 end
