@@ -5,7 +5,7 @@ RSpec.describe User, type: :model do
 
   context 'validation' do
     it 'user has name' do
-      expect(the_user.full_name).to_be eq("Mulugeta M.")
+      expect(the_user.full_name).to be_eq("Mulugeta M.")
     end
 
     it 'fails with no name' do
@@ -23,4 +23,11 @@ RSpec.describe User, type: :model do
       expect(the_user).to_not be_valid
     end
   end
+
+  context 'association' do
+  describe User do
+    it { should have_many(:expenses) }
+    it { should have_many(:categories) }
+  end
+end
 end

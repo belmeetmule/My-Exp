@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Expense, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "Assocation" do
+    it { should belong_to(:user) }
+    it { should have_many(:category_expenses) }
+    it { should have_many(:categories).through(:category_expenses) }
+
+  end
 end

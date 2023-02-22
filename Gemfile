@@ -70,6 +70,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'shoulda-matchers'
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'

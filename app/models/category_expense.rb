@@ -1,4 +1,4 @@
 class CategoryExpense < ApplicationRecord
-  belongs_to :catagory
+  belongs_to :category
   belongs_to :expense
 end
