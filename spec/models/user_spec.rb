@@ -5,7 +5,7 @@ RSpec.describe User, type: :model do
 
   context 'validation' do
     it 'user has name' do
-      expect(user1.name).to be_valid
+      expect(user1).to be_valid
     end
 
     it 'fails with no name' do
