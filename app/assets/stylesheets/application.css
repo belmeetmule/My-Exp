@@ -50,7 +50,7 @@ nav {
   display: flex;
   flex-direction: column;
   background: var(--main);
-  height: 120px;
+  height: 100px;
   padding: 16px;
   gap: 20px;
 }
@@ -78,7 +78,6 @@ nav {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  background: var(--main);
   align-items: center;
 }
 
@@ -103,7 +102,7 @@ button.btn-link {
   padding: 0 24px;
   margin-top: 0;
   margin-bottom: 20px;
-  height: 100px;
+  height: 58px;
   border-color: #719ece;
   box-shadow: 0 0 10px #719ece;
 }
@@ -127,7 +126,6 @@ button.btn-link {
 #home-form {
   width: 100%;
   padding: 10px;
-  padding-left: 174px;
 }
 
 .color-second {
