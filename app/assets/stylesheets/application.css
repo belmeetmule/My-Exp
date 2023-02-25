@@ -13,27 +13,28 @@
  *= require_tree .
  *= require_self
  */
- @import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817,44813');
- * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    scroll-behavior: smooth;
-  }
-  
-  :root {
-    --main: #3778c2;
-    --second: #5fb523;
-    --third: #434b54;
-    --error: #e2e05c;
-    --success: #009070;
-    --white: #fff;
-  }
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817,44813');
 
-  *,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main: #3778c2;
+  --second: #5fb523;
+  --third: #434b54;
+  --error: #e2e05c;
+  --success: #009070;
+  --white: #fff;
+}
+
+*,
 *::before,
 *::after {
   margin: 0;
@@ -42,240 +43,241 @@
 }
 
 body {
-    background-color: #fcfcfc;
-  }
-
-  nav{
-    display: flex;
-    flex-direction: column;
-    background: var(--main);
-    height: 120px;
-    padding: 16px;
-    gap: 20px;
-  }
-
-  .top-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--main);
-  }
-  .hamburger,
-  .search {
-    width: 45px;
-    height: 35px;
-  }
-
-  .text-main-header{
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: x-large;
-  }
-
-  .nav-secondary{
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    background: var(--main);
-    align-items: center;
-    display: flex;
-  }
-
-  button.btn-link {
-    width: 84px;
-    background: var(--main);
-    background: none;
-    border: none;
-    color: var(--third);
-    font-size: 20px;
-    font-weight: 800;
+  background-color: #fcfcfc;
 }
 
-.btn-icon{
+nav {
+  display: flex;
+  flex-direction: column;
+  background: var(--main);
+  height: 120px;
+  padding: 16px;
+  gap: 20px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--main);
+}
+
+.hamburger,
+.search {
+  width: 45px;
+  height: 35px;
+}
+
+.text-main-header {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+.nav-secondary {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  background: var(--main);
+  align-items: center;
+}
+
+button.btn-link {
+  width: 84px;
+  background: var(--main);
+  background: none;
+  border: none;
+  color: var(--third);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.btn-icon {
   width: 44px;
 }
 
 .grand-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 24px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    height: 100px;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px #719ECE;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  height: 100px;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
 }
 
 .amount-label,
-.amount{
-    font-size: x-large;
-    font-weight: bold;
+.amount {
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.amount-label{
-    color: thistle;
+.amount-label {
+  color: thistle;
 }
 
-  .user-info{
-    color: var(--white);
-    font-weight: 600;
-    font-size: x-large;
-  }
-
-  #home-form{
-    width: 100%;
-    padding: 10px;
-    padding-left: 174px;
-  }
-
-  .color-second{
-    color: var(--third);
-  }
-
-  .splash{
-    padding: 24px;
-  }
-
-  .splash-cont{
-    margin: 50% auto;
-    left:50%;
-    right:50%;
-    transform: translate(0%, -20%);
-    width: 200px;
-  }
-  .logo{
-    width: 100%;
-  }
-
-  .signin,
-  .signup{
-    display: block;
-    border-radius: 6px;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 2rem;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .signin{
-    background-color: var(--main);
-    color: wheat;
-  }
-
-  .signup{
-    color: var(--third);
-  }
-
-  .card-wrap{
-    padding: 10px 15px;
-  }
-
-  .card {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 0 10px #719ECE;
-  }
-
- .card-img-wrapper {
-    width: 100px;
-    height: 100px;
-    padding: 5px 10px;
-  }
-
-  .card-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-
-  .circle{
-    border-radius: 50%;
-  }
-
-   .text-container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    padding-right: 12px;
-  }
-
-  .flex-row{
-    display: flex;
-    justify-content: space-between;
-    font-size: x-large;
-    padding-top: 20px;
-    align-items: center;
-  }
-
-  p.text-xs {
-    color: var(--third);
+.user-info {
+  color: var(--white);
+  font-weight: 600;
+  font-size: x-large;
 }
 
-  .authentication{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
+#home-form {
+  width: 100%;
+  padding: 10px;
+  padding-left: 174px;
+}
 
-  .authentication>a{
-    color: var(--third);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: large;
-  }
+.color-second {
+  color: var(--third);
+}
 
-  form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 80%;
-  }
+.splash {
+  padding: 24px;
+}
 
-  input#user_email,
-  input#user_password,
-  input#user_name,
-  input#user_password_confirmation,
-  input[type="text"],
-  input[type="number"] {
-    width: 100%;
-    height: 35px;
-    padding-left: 10px;
-    border-radius: 8px;
-    font-size: large;
+.splash-cont {
+  margin: 50% auto;
+  left: 50%;
+  right: 50%;
+  transform: translate(0%, -20%);
+  width: 200px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.signin,
+.signup {
+  display: block;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signin {
+  background-color: var(--main);
+  color: wheat;
+}
+
+.signup {
+  color: var(--third);
+}
+
+.card-wrap {
+  padding: 10px 15px;
+}
+
+.card {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.card-img-wrapper {
+  width: 100px;
+  height: 100px;
+  padding: 5px 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding-right: 12px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  padding-top: 20px;
+  align-items: center;
+}
+
+p.text-xs {
+  color: var(--third);
+}
+
+.authentication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.authentication > a {
+  color: var(--third);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: large;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+
+input#user_email,
+input#user_password,
+input#user_name,
+input#user_password_confirmation,
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 8px;
+  font-size: large;
 }
 
 input:focus {
-    outline: none !important;
-    border:1px solid var(--main);
-    box-shadow: 0 0 10px #719ECE;
-  }
-
-input[type='submit']{
-    padding: 10px 15px;
-    width: 95%;
-    border-radius: 4px;
-    background-color: var(--main);
-    color: white;
-    font-size: large;
+  outline: none !important;
+  border: 1px solid var(--main);
+  box-shadow: 0 0 10px #719ece;
 }
 
-h2{
-    color: var(--main);
+input[type='submit'] {
+  padding: 10px 15px;
+  width: 95%;
+  border-radius: 4px;
+  background-color: var(--main);
+  color: white;
+  font-size: large;
 }
 
-.field{
-    color: var(--third);
+h2 {
+  color: var(--main);
 }
 
-.btn-wrapper{
+.field {
+  color: var(--third);
+}
+
+.btn-wrapper {
   width: 100vw;
   height: 80px;
   position: fixed;
@@ -291,18 +293,16 @@ h2{
 
 a.btn-add {
   text-decoration: none;
-    font-size: x-large;
-    font-weight: 800;
-    color: var(--third);
-    border-radius: 5px;
-    color: var(--white);
-    border: 1px solid white;
-    display: block;
-    width: 92%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: x-large;
+  font-weight: 800;
+  border-radius: 5px;
+  color: var(--white);
+  border: 1px solid white;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a.card-link {
@@ -315,22 +315,20 @@ a.card-link {
   color: var(--third);
 }
 
-.amount{
-  color: rgb(50, 47, 47)
+.amount {
+  color: rgb(50, 47, 47);
 }
 
-.exp{
+.exp {
   margin-bottom: 15px;
 }
-.btn-clean{
+
+.btn-clean {
   background: none;
-    border: none;
+  border: none;
 }
 
 .btn-spacer {
   margin: 10px;
   font-weight: 800;
 }
-
-
-
