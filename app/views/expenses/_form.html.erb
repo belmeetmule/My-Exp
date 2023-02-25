@@ -1,0 +1,27 @@
+<%= form_with(model: expense, url: "#{action_name == 'edit' ? category_expense_path(@category, expense) : category_expenses_path(@category)}", class: "contents") do |form| %>
+  <% if expense.errors.any? %>
+    <div id="error_explanation" class="msg-error">
+      <h2><%= pluralize(expense.errors.count, "error") %> prohibited this expense from being saved:</h2>
+
+      <ul>
+        <% expense.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.number_field :amount, step: ".01", class: "" %>
+  </div>
+
+  <div class="">
+    <%= form.submit "#{action_name == 'edit' ? 'Update' : 'Save'}", class: "w-[80%] py-2 px-5 bg-second border text-white block uppercase font-medium cursor-pointer" %>
+  </div>
+<% end %>

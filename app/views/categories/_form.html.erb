@@ -1,0 +1,30 @@
+<%= form_with(model: category, class: "contents") do |form| %>
+    <% if category.errors.any? %>
+      <div id="error_explanation" class="msg-error">
+        <h2> There are: <%= pluralize(category.errors.count, "error") %>: </h2>
+  
+        <ul>
+          <% category.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "" %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :icon %>
+      <%= form.text_field :icon, class: "" %>
+    </div>
+  
+    <div class="inline">
+    </div>
+  
+    <div class="">
+      <%= form.submit "#{action_name == 'edit' ? 'Update' : 'Save'}", class: "" %>
+    </div>
+  <% end %>
