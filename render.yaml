@@ -19,6 +19,8 @@ services:
         sync: false
   - type: redis
     name: redis
-    ipAllowList: []
-    plan: free
-    maxmemoryPolicy: noeviction
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: everywhere
+    plan: free # optional (defaults to starter)
+    maxmemoryPolicy: noeviction # optional (defaults to allkeys-lru)
