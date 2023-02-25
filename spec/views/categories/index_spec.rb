@@ -4,7 +4,7 @@ RSpec.feature 'Categories', type: :feature do
   before :each do
     @user = User.create(name: 'Mulie Gasha', email: 'abcgem@gmail.com', password: '123456')
     @category = Category.create(user: @user, name: 'martha',
-                             icon: 'https://www.flaticon.com/svg/static/icons/svg/3144/3144456.svg')
+                                icon: 'https://www.flaticon.com/svg/static/icons/svg/3144/3144456.svg')
 
     visit root_path
     click_link 'Log In'

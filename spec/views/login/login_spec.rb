@@ -12,20 +12,18 @@ RSpec.feature 'Log in', type: :feature do
   end
 
   it 'signs me in' do
-      fill_in 'user_email', with: 'mulie@gmail.com'
-      fill_in 'user_password', with: '123456'
-      click_button 'Log in'
-      expect(page).to have_content 'Signed in successfully'
+    fill_in 'user_email', with: 'mulie@gmail.com'
+    fill_in 'user_password', with: '123456'
+    click_button 'Log in'
+    expect(page).to have_content 'Signed in successfully'
   end
 
   it 'should not sign me in when the credentials are not correct' do
-      
-      fill_in 'user_email', with: 'bademail@bad.com'
-      fill_in 'user_password', with: '123456'
-    
+    fill_in 'user_email', with: 'bademail@bad.com'
+    fill_in 'user_password', with: '123456'
+
     click_button 'Log in'
     expect(current_path).to match new_user_session_path
     expect(page).to have_content 'Invalid Email or password'
   end
-  
 end

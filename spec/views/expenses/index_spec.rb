@@ -4,7 +4,7 @@ RSpec.feature 'Expenses', type: :feature do
   before :each do
     @user = User.create(name: 'mulie ab', email: 'mulie@ab', password: '123456')
     @category = Category.create(user: @user, name: 'mulie',
-                             icon: 'https://www.flaticon.com/svg/static/icons/svg/3144/3144456.svg')
+                                icon: 'https://www.flaticon.com/svg/static/icons/svg/3144/3144456.svg')
     @transaction = Expense.create(user: @user, name: 'Tomato Soup', amount: 10, categories: [@category])
 
     visit root_path
