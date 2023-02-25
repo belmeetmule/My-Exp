@@ -1,26 +1,26 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  let(:the_user) { User.new(full_name: 'Mulugeta M', email: 'mulie@gmail.com', password: '12345678') }
+  let(:user1) { User.new(name: 'Mulugeta M', email: 'mulie@gmail.com', password: '12345678') }
 
   context 'validation' do
     it 'user has name' do
-      expect(the_user.full_name).to be_eq('Mulugeta M.')
+      expect(user1.name).to be_valid
     end
 
     it 'fails with no name' do
-      the_user.full_name = nil
-      expect(the_user).to_not be_valid
+      user1.name = nil
+      expect(user1).to_not be_valid
     end
 
     it 'fails with no email' do
-      the_user.email = nil
-      expect(the_user).to_not be_valid
+      user1.email = nil
+      expect(user1).to_not be_valid
     end
 
     it 'fails with no password' do
-      the_user.email = nil
-      expect(the_user).to_not be_valid
+      user1.email = nil
+      expect(user1).to_not be_valid
     end
   end
 

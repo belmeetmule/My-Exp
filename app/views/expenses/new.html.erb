@@ -1,0 +1,8 @@
+<% content_for :title, 'Carpe Diem | New Transaction' %>
+<section class="container authentication">
+  <h1 class="text-main-header"> New Transaction for <%= @category.name %> category </h1>
+
+  <%= render "form", expense: @expense %>
+  
+  <%= link_to 'Back to expenses', category_expenses_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+</section>

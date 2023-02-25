@@ -1,0 +1,7 @@
+<% content_for :title, 'My-Exp | New Category' %>
+<section class="container authentication">
+  <h1 class="text-main-header">Editing <%=@category.name %></h1>
+
+  <%= render "form", group: @category %>
+  <%= link_to "Back to categories", groupies_path, class: "" %>
+</section>
