@@ -2,7 +2,7 @@
   <div class="top-nav">
       <% if controller_name == 'categories' and action_name == 'index' %>
         <div class="hamburger">
-        <%= image_tag('hamburger2.png', class:"back-arrow") %>
+        <%= image_tag('hamburger4.png', class:"back-arrow") %>
         </div>
       <% elsif controller_name == 'categories' and action_name != 'index' %>
       <div class="back-btn">
@@ -27,12 +27,13 @@
         <% end %>
       </h1>
       <div class="search">
-        <%= image_tag('search.png', class:"back-arrow") %>
+        <%= image_tag('search2.png', class:"back-arrow") %>
       </div>
   </div>
   <div class="nav-secondary">
     <%= button_to destroy_user_session_path, method: :delete, id: "home-form", class: 'btn-clean btn-nav' do %>
-      <%= image_tag('logout2.png', class:"back-arrow") %>
+      <!-- <%= image_tag('logout2.png', class:"back-arrow") %> -->
+      <p calss= "logout"> Logout </p>
     <% end %>
   </div>
 </nav>
