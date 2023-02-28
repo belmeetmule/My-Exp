@@ -29,6 +29,8 @@
   --main: #3778c2;
   --second: #5fb523;
   --third: #434b54;
+  --fourth: #6e757d;
+  --fifth: #d7dadf;
   --error: #e2e05c;
   --success: #009070;
   --white: #fff;
@@ -50,7 +52,7 @@ nav {
   display: flex;
   flex-direction: column;
   background: var(--main);
-  height: 120px;
+  height: 72px;
   padding: 16px;
   gap: 20px;
 }
@@ -78,7 +80,6 @@ nav {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  background: var(--main);
   align-items: center;
 }
 
@@ -103,7 +104,7 @@ button.btn-link {
   padding: 0 24px;
   margin-top: 0;
   margin-bottom: 20px;
-  height: 100px;
+  height: 58px;
   border-color: #719ece;
   box-shadow: 0 0 10px #719ece;
 }
@@ -127,7 +128,6 @@ button.btn-link {
 #home-form {
   width: 100%;
   padding: 10px;
-  padding-left: 174px;
 }
 
 .color-second {
@@ -135,18 +135,26 @@ button.btn-link {
 }
 
 .splash {
-  padding: 24px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    flex: dire;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 3rem;
 }
 
 .splash-cont {
-  margin: 50% auto;
-  left: 50%;
-  right: 50%;
-  transform: translate(0%, -20%);
-  width: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
+  width: 50%;
+}
+
+.signin-signup{
   width: 100%;
 }
 
@@ -163,7 +171,11 @@ button.btn-link {
 
 .signin {
   background-color: var(--main);
-  color: wheat;
+    color: wheat;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .signup {
@@ -225,6 +237,7 @@ p.text-xs {
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  margin-top: 5rem;
 }
 
 .authentication > a {
@@ -252,6 +265,7 @@ input[type="number"] {
   padding-left: 10px;
   border-radius: 8px;
   font-size: large;
+  border: 1px solid --main;
 }
 
 input:focus {
@@ -262,11 +276,13 @@ input:focus {
 
 input[type='submit'] {
   padding: 10px 15px;
-  width: 95%;
+  width: 100%;
+  width: -webkit-fill-available;
   border-radius: 4px;
   background-color: var(--main);
   color: white;
   font-size: large;
+  border: 1px solid --main;
 }
 
 h2 {
@@ -297,7 +313,7 @@ a.btn-add {
   font-weight: 800;
   border-radius: 5px;
   color: var(--white);
-  border: 1px solid white;
+  border: 1px solid --main;
   width: 92%;
   height: 100%;
   display: flex;

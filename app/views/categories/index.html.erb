@@ -3,9 +3,9 @@
         <p class="amount-label">Total Amount</p>
         <p class="amount"><%= "$#{@total}" %></p>
 </div>
-
-    <% if @categories.present? %>
     <div class="container card-wrap">
+    <% if @categories.present? %>
+    
     <% @categories.each do |category| %>   
        
           <%= link_to  category_expenses_path(category), class: "card-link" do %>
@@ -25,12 +25,11 @@
                 </div>
                 <p class="text-xs"><%= category.created_at.strftime("%d %b %Y") %></p>
               </div>
+              
             </div>
           <% end %>
-      <% end %>
-      
-      
-    else
+          <% end %>
+    <% else %>
         <div class="actions">
             You don't have any category yet! Create one.
         </div>

@@ -78,18 +78,15 @@
 <!-- Project Documentation -->
 ## 📽️ Project Doocumentation <a name="pro-doc"></a>
 
-Here is a link to the [documentation](https://drive.google.com/file/d/1rkVQ0UvE2LKVEBhHQQxbyqlzIQj2Dxu-/view?usp=share_link) of the project.
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [CarpeDiem](https://carpe-diem.up.railway.app/) :smiley:
+- [My-Exp](https://budget-app-f5j4.onrender.com) 
+
+- [video] (https://www.loom.com/share/d12a806d77a647d7a6252a596f3a1251)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ER DIAGRAM-->
-## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
-![er-diagram](https://github.com/microverseinc/curriculum-rails/raw/main/capstone/images/erd_diagram.png)
 
 <!-- GETTING STARTED -->
 
