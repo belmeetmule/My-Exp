@@ -232,6 +232,7 @@ p.text-xs {
   color: var(--third);
   line-height: 2rem;
   background-color: #d9dcdf1a;
+  width: 105%;
 }
 
 .authentication {
