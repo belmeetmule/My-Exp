@@ -107,16 +107,16 @@ button.btn-link {
   color: #515e6d3d;
 }
 
-.header-img-wrapper{
+.header-img-wrapper {
   width: 72px;
   height: 72px;
 }
 
-.with-img{
+.with-img {
   font-size: 1.5em;
 }
 
-.with-img > .amount-label{
+.with-img > .amount-label {
   padding-left: 7px;
 }
 
@@ -282,7 +282,8 @@ input[type='submit'] {
   padding: 10px 15px;
   width: 100%;
   min-width: 100%;
-  width: -webkit-fill-available;
+
+  /* width: -webkit-fill-available; */
   border-radius: 4px;
   background-color: var(--main);
   color: white;
@@ -342,8 +343,8 @@ a.card-link {
 
 .amount {
   color: rgb(82 78 78 / 40%);
-    font-weight: 800;
-    font-size: 0.8em;
+  font-weight: 800;
+  font-size: 0.8em;
 }
 
 .exp {
@@ -360,14 +361,14 @@ a.card-link {
   font-weight: 300;
 }
 
-.alert{
+.alert {
   background: var(--main);
 }
 
-.alert-success{
+.alert-success {
   color: rgb(8, 104, 8);
 }
 
-.alert-danger{
-  color:red;
+.alert-danger {
+  color: red;
 }
