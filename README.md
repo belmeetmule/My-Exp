@@ -160,6 +160,9 @@ rspec
 - [ ] **[Use importmaps or esbuild for loading JavaScript]**
 - [ ] **[Notifications that pop up and close]**
 - [ ] **[Implement side menu and User settings]**
+- [ ] **[Implement most recent and anicient]
+- [ ] **[Implement picture upload]
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
