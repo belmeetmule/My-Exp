@@ -1,18 +1,3 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 @import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817,44813');
 
 * {
@@ -52,7 +37,7 @@ nav {
   display: flex;
   flex-direction: column;
   background: var(--main);
-  height: 72px;
+  height: 92px;
   padding: 16px;
   gap: 20px;
 }
@@ -71,7 +56,7 @@ nav {
 }
 
 .text-main-header {
-  color: var(--white);
+  color: #ffffff9e;
   text-transform: uppercase;
   font-size: x-large;
 }
@@ -104,9 +89,12 @@ button.btn-link {
   padding: 0 24px;
   margin-top: 0;
   margin-bottom: 20px;
-  height: 58px;
+  height: 72px;
   border-color: #719ece;
   box-shadow: 0 0 10px #719ece;
+  font-size: 2em;
+  font-weight: 900;
+  color: #6e757d70;
 }
 
 .amount-label,
@@ -116,7 +104,20 @@ button.btn-link {
 }
 
 .amount-label {
-  color: thistle;
+  color: #515e6d3d;
+}
+
+.header-img-wrapper{
+  width: 72px;
+  height: 72px;
+}
+
+.with-img{
+  font-size: 1.5em;
+}
+
+.with-img > .amount-label{
+  padding-left: 7px;
 }
 
 .user-info {
@@ -135,14 +136,13 @@ button.btn-link {
 }
 
 .splash {
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    flex: dire;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    gap: 3rem;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  gap: 3rem;
 }
 
 .splash-cont {
@@ -154,7 +154,7 @@ button.btn-link {
   width: 50%;
 }
 
-.signin-signup{
+.signin-signup {
   width: 100%;
 }
 
@@ -171,11 +171,11 @@ button.btn-link {
 
 .signin {
   background-color: var(--main);
-    color: wheat;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: wheat;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .signup {
@@ -225,10 +225,13 @@ button.btn-link {
   font-size: x-large;
   padding-top: 20px;
   align-items: center;
+  line-height: 4rem;
 }
 
 p.text-xs {
   color: var(--third);
+  line-height: 2rem;
+  background-color: #d9dcdf1a;
 }
 
 .authentication {
@@ -265,7 +268,7 @@ input[type="number"] {
   padding-left: 10px;
   border-radius: 8px;
   font-size: large;
-  border: 1px solid --main;
+  border: 1px solid var(--main);
 }
 
 input:focus {
@@ -277,12 +280,13 @@ input:focus {
 input[type='submit'] {
   padding: 10px 15px;
   width: 100%;
+  min-width: 100%;
   width: -webkit-fill-available;
   border-radius: 4px;
   background-color: var(--main);
   color: white;
   font-size: large;
-  border: 1px solid --main;
+  border: 1px solid var(--main);
 }
 
 h2 {
@@ -313,12 +317,13 @@ a.btn-add {
   font-weight: 800;
   border-radius: 5px;
   color: var(--white);
-  border: 1px solid --main;
+  border: 1px solid var(--white);
   width: 92%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 a.card-link {
@@ -328,11 +333,16 @@ a.card-link {
 }
 
 .text-lg {
-  color: var(--third);
+  color: #515e6d3d;
+  font-weight: 900;
+  font-size: 0.8em;
+  line-height: normal;
 }
 
 .amount {
-  color: rgb(50, 47, 47);
+  color: rgb(82 78 78 / 40%);
+    font-weight: 800;
+    font-size: 0.8em;
 }
 
 .exp {
@@ -346,5 +356,17 @@ a.card-link {
 
 .btn-spacer {
   margin: 10px;
-  font-weight: 800;
+  font-weight: 300;
+}
+
+.alert{
+  background: var(--main);
+}
+
+.alert-success{
+  color: rgb(8, 104, 8);
+}
+
+.alert-danger{
+  color:red;
 }

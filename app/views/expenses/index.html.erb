@@ -1,11 +1,11 @@
 <% content_for :title, "Carpe Diem | #{@category.name} Transactions" %>
 <div class="w-full">
-  <div class="grand-total">
-    <div class= "card-img-wrapper">
+  <div class="grand-total with-img">
+    <div class= "header-img-wrapper">
       <img src="<%= @category.icon %>" alt=" category image" class="card-img circle" />
     </div>
       <h2 class="amount-label"><%= @category.name %></h2>
-      <p> <%= "$#{@category.total_amount}" %> </p>
+      <p class="amount"> <%= "$#{@category.total_amount}" %> </p>
     </div>
   </div>
 
@@ -21,7 +21,7 @@
                   <h4 class="text-lg">
                     <%= expense.name %>
                   </h4>
-                  <span class="font-bold">$<%= expense.amount %> </span>
+                  <span class="amount">$<%= expense.amount %> </span>
                 </div>
               </div>
                 
