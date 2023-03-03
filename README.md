@@ -82,7 +82,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [My-Exp](https://budget-app-f5j4.onrender.com) 
+- [My-Exp](https://my-expenses-3hoz.onrender.com) 
 
 - [video] (https://www.loom.com/share/d12a806d77a647d7a6252a596f3a1251)
 
