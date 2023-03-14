@@ -18,6 +18,9 @@ class UsersController < ApplicationController
   # GET /users/1 or /users/1.json
   def show; end
 
+  # GET users/1/edit
+  def edit; end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.

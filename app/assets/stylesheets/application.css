@@ -37,12 +37,14 @@ nav {
   display: flex;
   flex-direction: column;
   background: var(--main);
-  height: 92px;
+  height: 72px;
   padding: 16px;
   gap: 20px;
+  justify-content: center;
 }
 
-.top-nav {
+.top-nav,
+.menu-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,8 +53,10 @@ nav {
 
 .hamburger,
 .search {
-  width: 45px;
+  width: 35px;
   height: 35px;
+  display: flex;
+  align-items: center;
 }
 
 .text-main-header {
@@ -63,7 +67,8 @@ nav {
 
 .nav-secondary {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.3rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -79,7 +84,7 @@ button.btn-link {
 }
 
 .btn-icon {
-  width: 44px;
+  width: 30px;
 }
 
 .grand-total {
@@ -107,16 +112,16 @@ button.btn-link {
   color: #515e6d3d;
 }
 
-.header-img-wrapper{
+.header-img-wrapper {
   width: 72px;
   height: 72px;
 }
 
-.with-img{
+.with-img {
   font-size: 1.5em;
 }
 
-.with-img > .amount-label{
+.with-img > .amount-label {
   padding-left: 7px;
 }
 
@@ -126,9 +131,11 @@ button.btn-link {
   font-size: x-large;
 }
 
-#home-form {
+.menu-item {
   width: 100%;
   padding: 10px;
+  font-size: 1.2rem;
+  color:  #ffffff9e;
 }
 
 .color-second {
@@ -232,6 +239,7 @@ p.text-xs {
   color: var(--third);
   line-height: 2rem;
   background-color: #d9dcdf1a;
+  width: 105%;
 }
 
 .authentication {
@@ -245,9 +253,20 @@ p.text-xs {
 
 .authentication > a {
   color: var(--third);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: large;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: large;
+    width: 100%;
+    /* margin-top: -5rem; */
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 8px;
+}
+
+.authentication > a:hover {
+  color: var(--white);
+  background-color: var(--main);
+  border: 1px solid var(--third);
 }
 
 form {
@@ -262,7 +281,8 @@ input#user_password,
 input#user_name,
 input#user_password_confirmation,
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input#user_current_password  {
   width: 100%;
   height: 35px;
   padding-left: 10px;
@@ -277,23 +297,30 @@ input:focus {
   box-shadow: 0 0 10px #719ece;
 }
 
-input[type='submit'] {
-  padding: 10px 15px;
+input[type='submit'],
+link,
+.actions-edit {
+  padding: 10px 5px;
   width: 100%;
   min-width: 100%;
-  width: -webkit-fill-available;
+
+  /* width: -webkit-fill-available; */
   border-radius: 4px;
   background-color: var(--main);
   color: white;
   font-size: large;
   border: 1px solid var(--main);
 }
+input[type='submit']:hover{
+  scale: 1.05;
+}
 
 h2 {
   color: var(--main);
 }
 
-.field {
+.field,
+field_with_errors {
   color: var(--third);
 }
 
@@ -341,8 +368,8 @@ a.card-link {
 
 .amount {
   color: rgb(82 78 78 / 40%);
-    font-weight: 800;
-    font-size: 0.8em;
+  font-weight: 800;
+  font-size: 0.8em;
 }
 
 .exp {
@@ -359,14 +386,99 @@ a.card-link {
   font-weight: 300;
 }
 
-.alert{
+.alert {
   background: var(--main);
 }
 
-.alert-success{
+.alert-success {
   color: rgb(8, 104, 8);
 }
 
-.alert-danger{
-  color:red;
+.alert-danger {
+  color: red;
+}
+
+.flex.gap-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding: 5px;
+}
+
+#popup-menu {
+  position: fixed;
+  top: 140px;
+  left: 0px;
+  bottom: 140px;
+  background-color: var(--main);
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none; 
+  z-index: 1;
+  width: 25vw;
+  transition: transform 0.9s;
+  border-radius: 0px 15px 15px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  cursor: pointer;
+}
+
+#popup-menu li
+{
+  font-size: 18px;
+}
+
+img.back-arrow {
+  width: 30px;
+}
+
+.toggle-class{
+  display: none;
+}
+
+.menu-item{
+  display: flex;
+  gap: 5%;
+  padding: 5px 0px;
+  justify-content: center;
+}
+
+.menu-item:hover {
+  background: white;
+  color: var(--main);
+  border-radius: 8px;
+  scale: 1.1;
+}
+
+.usr-update{
+  margin-top: 1rem;
+}
+
+.flex-col {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 5px;
+  color: var(--third);
+}
+
+.actions-edit{
+  background: var(--third);
+}
+
+.actions-edit:hover{
+  background-color: red;
+  color: white;
+  scale: 1.05;
+  border: 1px solid var(--third)
+}
+
+.card-link:hover,
+.exp:hover{
+  scale: 1.03;
+}
+
+.btn-add:hover {
+  scale: 1.02;
+  font-size: xx-large;
 }

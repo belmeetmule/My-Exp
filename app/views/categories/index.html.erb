@@ -1,4 +1,7 @@
 <% content_for :title, 'My-Exp | Categories' %>
+
+  <%= javascript_import_module_tag "menu" %>
+
 <div class="grand-total">
         <p class="amount-label">Total Amount</p>
         <p class="amount"><%= "$#{@total}" %></p>
@@ -38,7 +41,7 @@
     <div class = "btn-wrapper">
       <%= link_to new_category_path, class: 'btn-add' do %>
         <span class = "btn-spacer"> Add category </span>
-        <%= image_tag('add.png', class:"back-arrow") %>
+        <%= image_tag('https://img.icons8.com/color-glass/30/null/plus-2-math.png', class:"back-arrow") %>
         <% end %>
     </div>
 </div>

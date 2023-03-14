@@ -27,10 +27,10 @@
                 
               <% if action_name != "show" %>
                   <div class="flex gap-2">
-                      <%= link_to edit_category_expense_path(@category, expense), class: "btn-icon" do %>
-                        <%= image_tag('edit-icon.png', class:"") %>
+                      <%= link_to edit_category_expense_path(@category, expense), class: "btn-icons" do %>
+                        <%= image_tag('edit-icon.png', class:"btn-icon") %>
                       <% end %>
-                      <%= button_to category_expense_path(@category, expense), method: :delete, class: "btn-clean" do %>
+                      <%= button_to category_expense_path(@category, expense), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: "btn-clean" do %>
                         <%= image_tag('trash-icon.png', class:"btn-icon") %>
                       <% end %>
                   </div>
