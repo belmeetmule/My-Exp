@@ -71,8 +71,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Authentication, User can manage his categories and transactions ]**
-- **[User must be authenticated]**
+- **Authentication - User must be authenticated**
+- **Users can track expenses category-wise**
+- **Users can see the total money spent on all categories**
+- **Users expense data is private to them**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +87,7 @@
 
 - [My-Exp](https://my-expenses-3hoz.onrender.com) 
 
-- [video](https://www.loom.com/share/80c9d948e48d4649bae6ecee25abf76e)
+- [video](https://www.loom.com/share/d17398b07917461e8659276a5500acc3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
