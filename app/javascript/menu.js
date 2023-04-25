@@ -10,7 +10,10 @@ window.addEventListener(('turbo:load'), ()=>{
     }, false); 
     
    document.addEventListener("click", function(event) {
+    if(event.target !== menu){
         menu.style.display = "none";
+    }
+        
     }, false);
 }
   });
