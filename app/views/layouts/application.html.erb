@@ -27,7 +27,7 @@
     <%= yield %>
 
     <div id="popup-menu">
-      <ul>
+      <ul class="menu-layout">
         <li calss= "logout"> 
         
           <%= button_to destroy_user_session_path, method: :delete, id: "home-form", class: 'btn-clean btn-nav menu-item' do %>
