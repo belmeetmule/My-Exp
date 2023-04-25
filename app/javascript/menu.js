@@ -1,4 +1,4 @@
-window.addEventListener(('turbo:load'), ()=>{
+document.addEventListener(('turbo:load'), ()=>{
    
     const button = document.getElementById("burger-btn");
     const menu = document.getElementById("popup-menu"); 
