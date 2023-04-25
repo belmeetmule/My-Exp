@@ -35,7 +35,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 My-Exp <a name="about-project"></a>
-![App-gif] (./app/assets/images/my-exp.gif)
+![App-gif](./app/assets/images/my-exp.gif)
 
 **My-Exp** is a mobile web application that allows the user to:  
  - register and log in, so that the data is private to them.
@@ -85,7 +85,7 @@
 
 - [My-Exp](https://my-expenses-3hoz.onrender.com) 
 
-- [video] (https://www.loom.com/share/80c9d948e48d4649bae6ecee25abf76e)
+- [video](https://www.loom.com/share/80c9d948e48d4649bae6ecee25abf76e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
