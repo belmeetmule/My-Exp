@@ -269,14 +269,14 @@ p.text-xs {
   margin-left: 10px;
 }
 
-#new_user .authentication > a {
-  width: 100%;
-}
-
 .authentication > a:hover {
   color: var(--white);
   background-color: var(--main);
   border: 1px solid var(--third);
+}
+
+#new_user .authentication > a {
+  width: 100%;
 }
 
 form {
@@ -432,10 +432,10 @@ a.card-link {
   cursor: pointer;
 }
 
-.menu-layout{
+.menu-layout {
   display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #popup-menu li {
