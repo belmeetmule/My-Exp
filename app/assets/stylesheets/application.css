@@ -133,12 +133,13 @@ button.btn-link {
 
 .menu-item {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: #ffffff9e;
   display: flex;
   gap: 5%;
   padding: 5px 0;
   justify-content: center;
+  flex-direction: column-reverse;
 }
 
 .color-second {
@@ -259,12 +260,17 @@ p.text-xs {
   text-decoration: none;
   font-weight: 500;
   font-size: large;
-  width: 100%;
+  width: 80%;
 
   /* margin-top: -5rem; */
   text-align: center;
   padding: 10px 5px;
   border-radius: 8px;
+  margin-left: 10px;
+}
+
+#new_user .authentication > a {
+  width: 100%;
 }
 
 .authentication > a:hover {
@@ -417,13 +423,19 @@ a.card-link {
   bottom: 140px;
   background-color: var(--main);
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 15px;
   display: none;
   z-index: 1;
-  width: 25vw;
+  width: 20vw;
   transition: transform 0.9s;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
+}
+
+.menu-layout{
+  display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #popup-menu li {
