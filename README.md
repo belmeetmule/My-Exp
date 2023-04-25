@@ -34,14 +34,15 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Carpe Diem <a name="about-project"></a>
-![blog-gif](https://thumbs.gfycat.com/WarmheartedPaleHamadryad-max-1mb.gif)
+# 📖 My-Exp <a name="about-project"></a>
+![App-gif] (./app/assets/images/my-exp.gif)
 
-**Carpe Diem** is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.The Ruby on Rails application that allows the user to:
-
+**My-Exp** is a mobile web application that allows the user to:  
  - register and log in, so that the data is private to them.
- - introduce new transactions associated with a category.
+ - Ceate categories for thier expenses.
+ - record transactions associated with a category.
  - see the money spent on each category.
+ - see the total money spent on all categories.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,7 +57,7 @@
 </details>
 
 <details>
-  <summary>Tailwind CSS / Material Tailwind </summary>
+  <summary> Javascript </summary>
 </details>
 
 <details>
@@ -143,7 +144,7 @@ rspec
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 👤 **Mulugeta M.**
 
@@ -157,11 +158,10 @@ rspec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Use importmaps or esbuild for loading JavaScript]**
 - [ ] **[Notifications that pop up and close]**
 - [ ] **[Implement side menu and User settings]**
-- [ ] **[Implement most recent and anicient]
-- [ ] **[Implement picture upload]
+- [ ] **[Implement most recent and anicient]**
+- [ ] **[Implement picture upload]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,7 +204,17 @@ Original design from [Gregoire Vella on Behance](https://www.behance.net/gregoir
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
+- ** On what platform this app works ?**
 
+  - Since it is a web mobile application, you can use it from your mobile-phone and personal computers too. In other words, you can use it from any devise or platfrom as long as it supports web-browser.
+
+- **How to run this app after I cloned it to my local machine ?**
+
+  - Start the sever by executing the command `rails server` from your terminal. And open up your browser and visit localhost:3000 
+
+- **What prerequisites are required to run the app ?**
+
+  - Since it is a RoR app make sure you have rails, ruby and postgresql are installed
 - **[Question_1]**
 
   - [Answer_1]
