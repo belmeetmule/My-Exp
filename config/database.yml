@@ -29,10 +29,11 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: budgetapp
+  username: budgetapp
 
   # The password associated with the postgres role (username).
-  #password: 'password1'
+  password: 'password1'
+  host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -58,9 +59,9 @@ development:
 test:
   <<: *default
   database: budget_app_test
-  #username: budgetapp
+  username: budgetapp
   # The password associated with the postgres role (username).
-  #password: 'password1'
+  password: 'password1'
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -77,16 +78,16 @@ test:
 # the values provided in this file. Alternatively, you can specify a connection
 # URL environment variable explicitly:
 #
-#production:
-# <<: *default
-# url: <%= ENV["DATABASE_URL"] %>
+production:
+ <<: *default
+ url: <%= ENV["DATABASE_URL"] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
-production:
-  <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: budget_app_production
-  username: budgetapp
-  password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
+# production:
+#   <<: *default
+#   url: <%= ENV["DATABASE_URL"] %>
+#   database: budget_app_production
+#   username: budgetapp
+#   password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
