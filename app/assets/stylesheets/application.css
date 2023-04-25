@@ -199,7 +199,10 @@ button.btn-link {
 
 .card {
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 80px;
   width: 100%;
   background: white;
   border-radius: 4px;
@@ -207,8 +210,8 @@ button.btn-link {
 }
 
 .card-img-wrapper {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   padding: 5px 10px;
 }
 
@@ -225,7 +228,7 @@ button.btn-link {
 .text-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
   padding-right: 12px;
 }
@@ -234,9 +237,9 @@ button.btn-link {
   display: flex;
   justify-content: space-between;
   font-size: x-large;
-  padding-top: 20px;
+  padding-top: 10px;
   align-items: center;
-  line-height: 4rem;
+  line-height: 2rem;
 }
 
 p.text-xs {
@@ -244,6 +247,7 @@ p.text-xs {
   line-height: 2rem;
   background-color: #d9dcdf1a;
   width: 105%;
+  font-size: 0.6em;
 }
 
 .authentication {
@@ -337,7 +341,7 @@ h2 {
 
 .btn-wrapper {
   width: 100vw;
-  height: 80px;
+  height: 65px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -373,7 +377,7 @@ a.card-link {
 .text-lg {
   color: #515e6d3d;
   font-weight: 900;
-  font-size: 0.8em;
+  font-size: 0.7em;
   line-height: normal;
 }
 
@@ -412,7 +416,7 @@ a.card-link {
 .flex.gap-2 {
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 5px;
   padding: 5px;
 }
 
