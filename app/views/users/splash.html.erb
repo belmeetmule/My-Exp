@@ -1,0 +1,17 @@
+<% content_for :title, 'My-Exp' %>
+
+<section class= "splash">
+  <div class = "splash-cont">
+    <%= image_tag ("my-exp-low-resolution-logo-color"), class: 'image logo' %>
+  </div>
+
+  <div class="signin-signup">
+    <%= link_to new_user_session_path, class: 'signin' do %>
+      <span>Log In</span>
+    <% end %>
+    <%= link_to new_user_registration_path, class: 'signup' do %>
+      <span>Register</span>
+    <% end %>
+  </div>
+
+</section>

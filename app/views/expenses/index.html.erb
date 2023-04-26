@@ -1,0 +1,59 @@
+<% content_for :title, "Carpe Diem | #{@category.name} Transactions" %>
+<div class="w-full">
+  <div class="grand-total with-img">
+    <div class= "header-img-wrapper">
+      <img src="<%= @category.icon %>" alt=" category image" class="card-img circle" />
+    </div>
+      <h2 class="amount-label"><%= @category.name %></h2>
+      <p class="amount"> <%= "$#{@category.total_amount}" %> </p>
+    </div>
+  </div>
+
+  <div id="expenses" class="container card-wrap">
+  <% if @expenses.present? %>
+    <% @expenses.each do |expense| %>
+        <div id="<%= dom_id expense %>" class="card exp">
+              <div class="card-img-wrapper">
+                <%= image_tag @category.icon, class: "card-img" %>
+              </div>
+              <div class="text-container">
+                <div class="flex-row">
+                  <h4 class="text-lg">
+                    <%= expense.name %>
+                  </h4>
+                  <span class="amount">$<%= expense.amount %> </span>
+                </div>
+              </div>
+                
+              <% if action_name != "show" %>
+                  <div class="flex gap-2">
+                      <%= link_to edit_category_expense_path(@category, expense), class: "btn-icons" do %>
+                        <%= image_tag('edit-icon.png', class:"btn-icon") %>
+                      <% end %>
+                      <%= button_to category_expense_path(@category, expense), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: "btn-clean" do %>
+                        <%= image_tag('trash-icon.png', class:"btn-icon") %>
+                      <% end %>
+                  </div>
+              <% end %>
+            </div>
+            <% end %>
+        
+        </div>
+        </div>
+  </div>
+</div>
+
+<% else %>
+<div class="text-center p-4">
+        You don't have any transaction yet! Create one.
+    </div>
+    
+  <% end %>
+
+<div class="btn-wrapper">
+  <%= link_to new_category_expense_path, class: "btn-add" do %>
+    <span class = "btn-spacer"> New transaction </span>
+        <%= image_tag('add.png', class:"back-arrow") %>
+    </div>
+  <% end %>
+</div>

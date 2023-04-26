@@ -1,0 +1,35 @@
+<nav>
+  <div class="top-nav">
+  
+      <% if controller_name == 'categories' and action_name == 'index' %>
+        <a class="hamburger" href="#" id="popup-menu-button">
+          <%= image_tag('hamburger4.png', id:"burger-btn") %>
+        </a>
+       
+      <% elsif controller_name == 'categories' and action_name != 'index' %>
+      <div class="hamburger">
+      <%= link_to categories_path do %>
+        <%= image_tag('back-btn-white2.png', class:"back-arrow") %>
+      <% end %>
+    </div>
+  <% elsif controller_name == 'expenses' %>
+  
+    <div class="back-btn">
+      <%= link_to "#{action_name == 'index' ? categories_path : category_expenses_path}" do %>
+      
+      <%= image_tag('back-btn-white2.png', class:"back-arrow") %>
+      <% end %>
+    </div>
+  <% end %>
+      <h1 class="text-main-header">
+        <% if controller_name == 'expenses' %>
+          <%= 'Transactions' %>
+        <% else %>
+          <%= 'Categories' %>
+        <% end %>
+      </h1>
+      <div class="search">
+        <%= image_tag('search2.png', class:"back-arrow") %>
+      </div>
+  </div>
+</nav>

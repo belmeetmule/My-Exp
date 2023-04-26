@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= favicon_link_tag 'my-exp-website-favicon-color.png' %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <main class="main-container">
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+   
+    <% if current_user %>
+      <%= render 'layouts/nav_bar' %>
+    <% end %>
+    
+    <%= yield %>
+
+    <div id="popup-menu">
+      <ul class="menu-layout">
+        <li calss= "logout"> 
+        
+          <%= button_to destroy_user_session_path, method: :delete, id: "home-form", class: 'btn-clean btn-nav menu-item' do %>
+              <span calss= "logout"> Logout </span>
+              <%= image_tag('https://img.icons8.com/external-sbts2018-flat-sbts2018/30/null/external-logout-social-media-basic-1-sbts2018-flat-sbts2018.png', class:"logout-icon") %>
+          <% end %>
+        </li>
+        <li>
+          <%= button_to edit_user_registration_path, method: :get, id: "home-form2", class: 'btn-clean btn-nav menu-item' do %>
+            <span calss= "logout"> Update </span>
+            <%= image_tag('https://img.icons8.com/external-xnimrodx-blue-xnimrodx/30/null/external-setting-advertising-xnimrodx-blue-xnimrodx.png', class:"logout-icon") %>
+          <% end %>
+        </li>
+
+      
+      </ul>
+    </div>
+   
+  </main>
+ 
+  </body>
+</html>
