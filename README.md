@@ -87,7 +87,7 @@
 
 - [My-Exp](https://my-expenses-3hoz.onrender.com) 
 
-- [video](https://www.loom.com/share/d17398b07917461e8659276a5500acc3)
+- [video](https://www.loom.com/share/050857e34761481fbb81b2fb5ab25923)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +161,6 @@ rspec
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Notifications that pop up and close]**
-- [ ] **[Implement side menu and User settings]**
 - [ ] **[Implement most recent and anicient]**
 - [ ] **[Implement picture upload]**
 
@@ -217,13 +216,6 @@ Original design from [Gregoire Vella on Behance](https://www.behance.net/gregoir
 - **What prerequisites are required to run the app ?**
 
   - Since it is a RoR app make sure you have rails, ruby and postgresql are installed
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
